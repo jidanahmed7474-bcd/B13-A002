@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave Podcast</title>
-    <link href="./output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
 
             <!-- Right Button (Desktop) -->
             <div class="hidden lg:block">
-                <a href="#" class="px-6 py-2 rounded-full bg-linear-to-r from-[#FF2E93] to-[#FF8C00] text-white font-bold text-sm shadow-[0_10px_20px_-10px_rgba(255,46,147,0.5)] hover:scale-105 transition duration-300 flex items-center justify-center gap-2">
+                <a href="#" class="px-7 py-2 rounded-full bg-linear-to-r from-[#FF2E93] to-[#FF8C00] text-white font-bold text-sm shadow-[0_10px_20px_-10px_rgba(255,46,147,0.5)] hover:scale-105 transition duration-300 flex items-center justify-center gap-2">
                     Subscribe 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -71,10 +71,10 @@
         <div class="relative mb-10 group">
             
             <!-- Glowing Background behind circle -->
-            <div class="absolute inset-0 bg-[#FF2E93] rounded-full blur-[40px] opacity-40 group-hover:opacity-60 transition duration-500"></div>
+            <div class="absolute inset-0 bg-[#FF2E93] rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition duration-500"></div>
             
             <!-- The linear Circle (Pink to Orange) -->
-            <div class="relative w-40 h-40 lg:w-96 lg:h-96 rounded-full bg-linear-to-b from-[#FF2E93] to-[#FF8C00] p-[2px] shadow-2xl shadow-[#FF2E93]/30 flex items-center justify-center">
+            <div class="relative w-40 h-40 lg:w-96 lg:h-96 rounded-full bg-linear-to-b from-[#FF2E93] to-[#FF8C00] p-0.5 shadow-2xl shadow-[#FF2E93]/30 flex items-center justify-center">
                 
                 
                 <div class="w-full h-full rounded-full flex items-center justify-center bg-transparent">
@@ -202,7 +202,7 @@
 
                 <!-- 1. Premium Audio Quality (Tall Card: Left Side) -->
                 <!-- Desktop: Takes 1 column width, but spans 2 rows height -->
-                <div class=" p-10 rounded-[32px] bg-[#290E4C] transition duration-300 lg:row-span-2 group">
+                <div class=" p-10 rounded-4xl bg-[#290E4C] transition duration-300 lg:row-span-2 group">
                     <!-- Icon Area (Replace src with your icon path) -->
                     <img src="../assets/headphone.png" alt="Audio Icon" class="w-14 h-14 mb-8 object-contain">
                     
@@ -214,7 +214,7 @@
 
                 <!-- 2. Mobile Friendly (Wide Card: Top Right) -->
                 <!-- Desktop: Spans 2 columns width -->
-                <div class=" p-10 rounded-[32px] bg-[#290E4C] transition duration-300 lg:col-span-2">
+                <div class=" p-10 rounded-4xl bg-[#290E4C] transition duration-300 lg:col-span-2">
                     <img src="../assets/device.png" alt="Mobile Icon" class="w-12 h-12 mb-6 object-contain">
                     
                     
@@ -226,7 +226,7 @@
 
                 <!-- 3. Global Community (Wide Card: Middle Right) -->
                 <!-- Desktop: Spans 2 columns width -->
-                <div class=" p-10 rounded-[32px] bg-[#290E4C] transition duration-300 lg:col-span-2">
+                <div class=" p-10 rounded-4xl bg-[#290E4C] transition duration-300 lg:col-span-2">
                     <img src="../assets/location.png" alt="Community Icon" class="w-12 h-12 mb-6 object-contain">
                     
                     <h3 class="text-xl font-bold text-white mb-3">Global Community</h3>
@@ -237,7 +237,7 @@
 
                 <!-- 4. Exclusive Interviews (Wide Card: Bottom Left) -->
                 <!-- Desktop: Spans 2 columns width -->
-                <div class=" p-10 rounded-[32px] bg-[#290E4C] transition duration-300 lg:col-span-2">
+                <div class=" p-10 rounded-4xl bg-[#290E4C] transition duration-300 lg:col-span-2">
                     <img src="./assets/icon-interview.png" alt="Interview Icon" class="w-12 h-12 mb-6 object-contain">
                     
                     <h3 class="text-xl font-bold text-white mb-3">Exclusive Interviews</h3>
@@ -248,7 +248,7 @@
 
                 <!-- 5. Rich Resources (Standard Card: Bottom Right) -->
                 <!-- Desktop: Takes 1 column width -->
-                <div class=" p-10 rounded-[32px] bg-[#290E4C] transition duration-300">
+                <div class=" p-10 rounded-4xl bg-[#290E4C] transition duration-300">
                     <img src="../assets/resource.png" alt="Resources Icon" class="w-12 h-12 mb-6 object-contain">
                     
                     <h3 class="text-xl font-bold text-white mb-3">Rich Resources</h3>
@@ -282,7 +282,7 @@
                         
                         <!-- Play Button (Centered) -->
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-14 h-14 rounded-full bg-gradient-to-r from-[#FF2E93] to-[#FF8C00] flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition">
+                            <div class="w-14 h-14 rounded-full bg-linear-to-r from-[#FF2E93] to-[#FF8C00] flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white ml-1">
                                     <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
                                 </svg>
@@ -312,7 +312,7 @@
                     <div class="relative h-56 w-full overflow-hidden">
                         <img src="../assets/eps2.png" alt="Episode 2" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-14 h-14 rounded-full bg-gradient-to-r from-[#FF2E93] to-[#FF8C00] flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition">
+                            <div class="w-14 h-14 rounded-full bg-linear-to-r from-[#FF2E93] to-[#FF8C00] flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white ml-1">
                                     <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
                                 </svg>
@@ -339,7 +339,7 @@
                     <div class="relative h-56 w-full overflow-hidden">
                         <img src="../assets/eps3.png" alt="Episode 3" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-14 h-14 rounded-full bg-gradient-to-r from-[#FF2E93] to-[#FF8C00] flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition">
+                            <div class="w-14 h-14 rounded-full bg-linear-to-r from-[#FF2E93] to-[#FF8C00] flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white ml-1">
                                     <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
                                 </svg>
@@ -374,7 +374,7 @@
             <div class="bg-[#1C1029] rounded-[3rem] p-8 lg:p-16 flex flex-col lg:flex-row items-center gap-10 lg:gap-16 shadow-2xl">
                 
                 <!-- Host Image (Left) -->
-                <div class="flex-shrink-0">
+                <div class="flex -shrink-0">
                     <img src="../assets/host.png" alt="Alex Kumar" class="w-48 h-48 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-[#1C1029] shadow-[0_0_40px_-10px_rgba(255,46,147,0.3)]">
                 </div>
 
