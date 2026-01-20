@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* বেসিক বডি স্টাইল */
+body {
+    background-color: #0F0518; /* brand-dark */
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
